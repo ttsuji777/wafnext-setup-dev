@@ -11,7 +11,7 @@ Central Manager (CM)画面左上部のworkspace (3x3のドット)から、”Sec
 画面左側で"WAF" > "Policies"を選択、"Create"をクリックしてポリシーを新規作成します。
 
    .. image:: images/Picture2.png
-      :scale: 30%
+      :scale: 25%
       :align: center
    |
 
@@ -45,7 +45,7 @@ Central Manager (CM)画面左上部のworkspace (3x3のドット)から、”Sec
       :align: center
    |
 
-"Attack Signatures"のページを選択し、"Enforce" > "Enforce all Staged Signatures"でシグネチャのstagingを解除します。
+"Attack Signatures"のページを選択し、"Enforce" > "Enforce all Staged Signatures"でシグネチャのStagingを解除します。
 
    .. image:: images/Picture6.png
       :scale: 20%
