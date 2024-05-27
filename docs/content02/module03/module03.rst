@@ -26,7 +26,7 @@ CM画面左上部のworkspaceから、”Security”を選択します。
       :align: center
    |
    .. image:: images/Picture4.png
-      :scale: 30%
+      :scale: 20%
       :align: center
    |
 
@@ -54,12 +54,12 @@ CM画面左上部のworkspaceから、”Security”を選択します。
    |
 
 
-2.1で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
 今回は該当のシグネチャに対して”Enforcement設定が”Stage”となっているため、攻撃はrejectされず、ユーザー情報を取得できます。
 
 
    .. figure:: images/Picture8.png
-      :scale: 50%
+      :scale: 60%
       :align: center
    |
 

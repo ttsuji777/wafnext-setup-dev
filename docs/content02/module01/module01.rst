@@ -21,14 +21,14 @@ BIG-IP Next Central Manager GUIのログイン画面が表示されたら、以�
 ログインすると、次のようなホーム画面になります。"Manage Applications" > "Go to Application Workspace"をクリックします。
 
    .. image:: images/Picture3.png
-      :scale: 15%
+      :scale: 20%
       :align: center
    |       
 
 “Start Adding Apps”をクリックして、新規アプリケーション作成します。
 
    .. image:: images/Picture4.png
-      :scale: 50%
+      :scale: 60%
       :align: center
    |       
 
@@ -36,7 +36,7 @@ BIG-IP Next Central Manager GUIのログイン画面が表示されたら、以�
    - **HTTP-DVWA**　（任意の名前）
 - What kind of Application:
    - **Standard**　を選択
-- **“Start Creating”** を二回クリック
+- **“Start Creating”** を2回クリック
 
 
    .. image:: images/Picture5.png

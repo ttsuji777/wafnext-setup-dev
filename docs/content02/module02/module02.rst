@@ -36,24 +36,24 @@ Central Manager (CM)画面左上部のworkspace (3x3のドット)から、”Sec
 作成されたWAFポリシーを選択し、”General Settings”から”Log Events”を”All”にして、”Save”をクリックします。
 
    .. image:: images/Picture4.png
-      :scale: 15%
+      :scale: 20%
       :align: center
    |
 
    .. image:: images/Picture5.png
-      :scale: 15%
+      :scale: 20%
       :align: center
    |
 
 "Attack Signatures"のページを選択し、"Enforce" > "Enforce all Staged Signatures"でシグネチャのstagingを解除します。
 
    .. image:: images/Picture6.png
-      :scale: 15%
+      :scale: 20%
       :align: center
    |
 
    .. image:: images/Picture7.png
-      :scale: 15%
+      :scale: 20%
       :align: center
    |
 
@@ -101,7 +101,7 @@ Central Manager画面左上部のworkspaceから、"Applications"へ戻ります
       :align: center
    |
 
-../../content02/module01/module01 で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
 今回は、アプリケーションにWAFポリシーが適用されているため、攻撃はrejectされます。
 
 BIG-IP Next WAFが攻撃をブロックしたことを示す、以下のような画面が表示されることを確認します。
