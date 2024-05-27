@@ -1,7 +1,7 @@
 WAFポリシーを作成してアプリケーションへ適用
 =========================================================
 
-CM画面左上部のworkspaceから、”Security”を選択します。
+Central Manager (CM)画面左上部のworkspace (3x3のドット)から、”Security”を選択します。
 
    .. image:: images/Picture1.png
       :scale: 15%
@@ -11,14 +11,14 @@ CM画面左上部のworkspaceから、”Security”を選択します。
 画面左側で"WAF" > "Policies"を選択、"Create"をクリックしてポリシーを新規作成します。
 
    .. image:: images/Picture2.png
-      :scale: 20%
+      :scale: 50%
       :align: center
    |
 
 - Name:
    - **dvwa_waf_policy**　（任意の名前）
 
-- Advanced Viewをenableします　（テンプレート選択のため）
+- テンプレートを選択するため、”Advanced View”のトグルをクリックし、有効にします。
 
 - Template:
    - **RAPID-Template**
@@ -33,7 +33,7 @@ CM画面左上部のworkspaceから、”Security”を選択します。
       :align: center
    |
 
-作成されたWAFポリシーを選択、”General Settings”から”Log Events”を”All”にし、”Save”をクリックします。
+作成されたWAFポリシーを選択し、”General Settings”から”Log Events”を”All”にして、”Save”をクリックします。
 
    .. image:: images/Picture4.png
       :scale: 15%
@@ -57,7 +57,9 @@ CM画面左上部のworkspaceから、”Security”を選択します。
       :align: center
    |
 
-CM画面左上部のworkspaceから、"Applications"へ戻ります。先ほど作成したアプリケーション(HTTP-DVWA)を選択し、"Edit"します。
+シグネチャのステータスが”Enforced”になっていることを確認したら、”Cancel”をクリックして、WAFポリシー画面に戻ります。
+
+Central Manager画面左上部のworkspaceから、"Applications"へ戻ります。先ほど作成したアプリケーション (HTTP-DVWA)を選択し、"Edit"をクリックします。
 
    .. image:: images/Picture8.png
       :scale: 20%
@@ -77,7 +79,7 @@ CM画面左上部のworkspaceから、"Applications"へ戻ります。先ほど�
       :align: center
    |
 
-- “Use a WAF Policy” をenableします
+- “Use a WAF Policy”のトグルをクリックして、有効にします。
 
 - WAF Policy Name:
    - **dvwa_waf_policy** (先ほど作成したWAFポリシー)
@@ -91,12 +93,17 @@ CM画面左上部のworkspaceから、"Applications"へ戻ります。先ほど�
       :align: center
    |
 
+
+作成済みのアプリケーション (“HTTP-DVWA”)にWAFポリシーが適用されていることを確認します。
+
    .. image:: images/Picture12.png
       :scale: 20%
       :align: center
    |
 
-WindowsクライアントからDVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力し、SQLインジェクション攻撃をします。攻撃がrejectされたことを確認します。
+2.1で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+今回は、アプリケーションにWAFポリシーが適用されているため、攻撃はrejectされます。
+BIG-IP Next WAFが攻撃をブロックしたことを示す、以下のような画面が表示されることを確認します。
 
    .. image:: images/Picture13.png
       :scale: 60%

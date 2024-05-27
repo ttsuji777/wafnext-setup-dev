@@ -4,10 +4,11 @@ Blocking画面のカスタマイズ
 攻撃をブロックした際、ユーザに返されるレスポンスページの内容をカスタマイズすることが可能です。
 
 CM画面左上部のworkspaceから、"Security"を選択します。
-WAF > WAF Policysより、適用したいWAFポリシーを選択して、"Response Pages"の設定ページを選択します。
+”WAF” > “Policies”で、作成済みのWAFポリシーを選択し、"Response Pages"をクリックして、レスポンスページの設定ページを選択します。
 
-Response Bodyでブロックページの内容をカスタマイズすることが出来ます。
-"Preview"をクリックすることで、ブロックページのレビューが表示されます。クライアントから攻撃を行う際、カスタマイズされた内容がブラウザで表示されます。
+”Response Body”で、ブロックページの内容をカスタマイズすることができます。 "Preview"をクリックすることで、ブロックページのレビューが表示されます。
+クライアントから攻撃があった際に、カスタマイズされた内容がブラウザに表示されます。
+例えば、デフォルトでは” The requested URL was rejected.”と表示されるメッセージ部分を”Blocking!!!”と変更する場合には、以下の画面のようになります。
 
 
    .. image:: images/Picture1.png
@@ -20,12 +21,15 @@ Response Bodyでブロックページの内容をカスタマイズすること�
    |
 
 
-また、必要に応じて、Response Headersをカスタマイズする（eg. response codeを200から403へ変更など）や、ブロックページを指定URLへRedirectすることも設定可能です。
+”Response Headers”タブをクリックすると、レスポンスヘッダをカスタマイズする (例: Response Codeを”200”から”403”へ変更)ことができます。
 
    .. image:: images/Picture3.png
       :scale: 20%
       :align: center
    |
+
+
+また、”Blocking Page”タブで”Response Type”を”Redirect URL”に設定すると、ブロックページを指定したURLへリダイレクトすることも可能です。
 
    .. image:: images/Picture4.png
       :scale: 20%

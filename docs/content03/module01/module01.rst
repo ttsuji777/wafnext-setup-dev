@@ -16,7 +16,7 @@ WAF > Live Updates > Attack Signaturesを選択し、リフレッシュマーク
    |
 
 
-最新のファイルネームを選択し、”Install”をクリックしてアップデートを適用します。
+ファイル作成日 (File Created Data)が最新のものを選択し、”Install”をクリックしてアップデートを適用します。
 
    .. image:: images/Picture3.png
       :scale: 25%
@@ -26,7 +26,8 @@ WAF > Live Updates > Attack Signaturesを選択し、リフレッシュマーク
 インストール完了後、最新のファイルのStatusがActiveになります。
 
 
-また、Settings で Install Latest Update Automaticallyの設定をEnabled (Real Time)へ変更すると、手動で最新のアップデートファイルを取得することが不要で、アップデートファイルが定期的にダウンロードされます。
+”Settings”で”Install Latest Update Automatically”の設定が”Enabled (Real Time)”になっている場合、手動で最新のアップデートファイルを取得することが不要で、アップデートファイルが定期的にダウンロード、インストールされます。
+Attack Signatureに関しては、本設定はデフォルトで有効です。
 
    .. image:: images/Picture4.png
       :scale: 20%
@@ -38,8 +39,8 @@ WAF > Live Updates > Attack Signaturesを選択し、リフレッシュマーク
       :align: center
    |
 
-以上AutomaticallyアップデートはAttack Signatures, Bot Defense, Threat Campaignsごとで設定されます。
-必要に応じて該当tabを選択する上、設定してください。
+上記の自動アップデートはAttack Signatures, Bot Defense, Threat Campaigns毎に設定します。 
+必要に応じて該当のタブを選択し、設定してください。
 
    .. image:: images/Picture6.png
       :scale: 20%
