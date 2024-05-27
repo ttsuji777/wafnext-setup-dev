@@ -4,14 +4,14 @@ WAFポリシーを作成してアプリケーションへ適用
 Central Manager (CM)画面左上部のworkspace (3x3のドット)から、”Security”を選択します。
 
    .. image:: images/Picture1.png
-      :scale: 15%
+      :scale: 30%
       :align: center
    |
 
 画面左側で"WAF" > "Policies"を選択、"Create"をクリックしてポリシーを新規作成します。
 
    .. image:: images/Picture2.png
-      :scale: 50%
+      :scale: 30%
       :align: center
    |
 
@@ -94,15 +94,16 @@ Central Manager画面左上部のworkspaceから、"Applications"へ戻ります
    |
 
 
-作成済みのアプリケーション (“HTTP-DVWA”)にWAFポリシーが適用されていることを確認します。
+作成済みのアプリケーション (HTTP-DVWA)にWAFポリシーが適用されていることを確認します。
 
    .. image:: images/Picture12.png
       :scale: 20%
       :align: center
    |
 
-2.1で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+../../content02/module01/module01 で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
 今回は、アプリケーションにWAFポリシーが適用されているため、攻撃はrejectされます。
+
 BIG-IP Next WAFが攻撃をブロックしたことを示す、以下のような画面が表示されることを確認します。
 
    .. image:: images/Picture13.png

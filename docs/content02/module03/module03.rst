@@ -21,16 +21,17 @@ CM画面左上部のworkspaceから、”Security”を選択します。
       :align: center
    |
 
-   .. figure:: images/Picture4.png3
+   .. figure:: images/Picture3.png
       :scale: 20%
       :align: center
    |
-   .. image:: images/Picture3.png4
+   .. image:: images/Picture4.png
       :scale: 30%
       :align: center
    |
 
 “Signatures”から、先ほどrejectされたSQLインジェクションのリクエストをクリックし、“Actions”をクリックすると、シグネチャ単位でEnforcement設定を特定ポリシーに対して上書きすることができます。
+
 ここでは、先ほどブロックされたシグネチャのEnforcement Settingを”Stage”、つまりブロックしない設定に変更し、作成済みのWAFポリシーに適用します。設定後、”Save & Deploy”をクリックして、変更を反映します。
 
    .. image:: images/Picture5.png
@@ -41,14 +42,14 @@ CM画面左上部のworkspaceから、”Security”を選択します。
 “Deploy latest changes?”の画面で必要に応じてコメントを追記して、”Deploy”をクリックします。
 
    .. image:: images/Picture6.png
-      :scale: 30%
+      :scale: 25%
       :align: center
    |
 
 画面上部に“Deploy completed successfully.”と表示されたら、”Cancel & Exit”をクリックして設定を終了します。
 
    .. image:: images/Picture7.png
-      :scale: 30%
+      :scale: 50%
       :align: center
    |
 
@@ -58,7 +59,7 @@ CM画面左上部のworkspaceから、”Security”を選択します。
 
 
    .. figure:: images/Picture8.png
-      :scale: 30%
+      :scale: 50%
       :align: center
    |
 

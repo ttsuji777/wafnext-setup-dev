@@ -8,7 +8,8 @@ UDF画面上部タブの"DEPLOYMENT"をクリックし、BIG-IP Next Central Man
       :align: center
    |
 
-BIG-IP Next CM GUIへのログイン、ログインプロンプトが表示されたら、ユーザ名/パスワードを入力してログインします。
+BIG-IP Next Central Manager GUIのログイン画面が表示されたら、以下のユーザー名/パスワードを入力してログインします。
+
    - ユーザー名/パスワード:
    - **admin/Welcome123!**
 
@@ -54,12 +55,13 @@ BIG-IP Next CM GUIへのログイン、ログインプロンプトが表示さ�
 - Monitor Type:
    - **http**
 
+
    .. image:: images/Picture6.png
       :scale: 20%
       :align: center
    |       
 
-"Virtual Servers"のtabに戻り、以下内容を入力します。
+"Virtual Servers"のタブに戻り、以下内容を入力します。
 
 - Virtual Server Name:
    - **DVWA-VS**
@@ -153,7 +155,7 @@ Windowsクライアント上でChromeブラウザを開き、http://10.1.10.100/
    .. image:: images/Picture17.png
       :align: center
    |       
-”SQL Injection”を選択し、User IDに「'or 1=1 #」と入力して、SQLインジェクション攻撃を実行します (本ガイドからコマンドはコピーしないで下さい。シングルクォーテーションに注意してタイプして下さい。)。
+”SQL Injection”を選択し、User IDに「'or 1=1 #」と入力して、SQLインジェクション攻撃を実行します (本ガイドからコマンドはコピーしないで下さい。シングルクォーテーションに注意してタイプしてください。)。
 
 SQLインジェクション攻撃が成功し、ユーザー情報を取得できることを確認します。
 
