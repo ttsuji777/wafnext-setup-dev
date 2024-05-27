@@ -13,7 +13,7 @@ CM画面左上部のworkspaceから、”Security”を選択します。
       :align: center
    |
 
-“Signatures”から、先ほどrejectされたSQLインジェクションのリクエストである 「((200015125) SQL-INJ in "id"」をクリックし、”View Logs”から詳細なログを確認できます。
+“Signatures”から、先ほどrejectされたSQLインジェクションのリクエストである 「(200015125) SQL-INJ in "id"」をクリックし、”View Logs”から詳細なログを確認できます。
 クライアントPCのブラウザでレスポンスとして表示されたSupport IDと、ログ中のSupport IDを比較することで、イベントログを特定することができます。
 
    .. figure:: images/Picture2.png
@@ -54,12 +54,14 @@ CM画面左上部のworkspaceから、”Security”を選択します。
    |
 
 
-:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。
+
+WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User IDに「'or 1=1 #」と入力して、SQLインジェクション攻撃を実行します。
 今回は該当のシグネチャに対して”Enforcement設定が”Stage”となっているため、攻撃はrejectされず、ユーザー情報を取得できます。
 
 
    .. figure:: images/Picture8.png
-      :scale: 60%
+      :scale: 70%
       :align: center
    |
 

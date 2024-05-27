@@ -101,7 +101,9 @@ Central Manager画面左上部のworkspaceから、"Applications"へ戻ります
       :align: center
    |
 
-:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User ID に 'or 1=1 # と入力して、SQLインジェクション攻撃を実行します。
+:doc:`../../content02/module01/module01` で実施したSQLインジェクション攻撃を、再度実行します。
+
+WindowsクライアントにログインしてChromeブラウザを開き、DVWAのSQL Injectionページより、User IDに「'or 1=1 #」と入力して、SQLインジェクション攻撃を実行します。
 今回は、アプリケーションにWAFポリシーが適用されているため、攻撃はrejectされます。
 
 BIG-IP Next WAFが攻撃をブロックしたことを示す、以下のような画面が表示されることを確認します。

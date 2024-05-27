@@ -2,7 +2,7 @@ Live Updatesの設定と適用
 =========================================================
 
 CM画面左上部のworkspaceから、"Security"を選択します。
-WAF > Live Updates > Attack Signaturesを選択し、リフレッシュマークをクリックすることで、最新のアップデートをダウンロードします。
+"WAF" > "Live Updates" > "Attack Signatures"を選択し、リフレッシュマークをクリックすることで、最新のアップデートをダウンロードします。
 
 
    .. image:: images/Picture1.png

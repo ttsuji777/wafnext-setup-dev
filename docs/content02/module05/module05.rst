@@ -4,7 +4,9 @@ Geolocationの設定
 WAFポリシーによって保護されているアプリケーションに対して、Geolocation Enforcementを使用して、特定の国でのアプリケーションの使用を制限または許可することができます。 
 デフォルトでは、すべての国からのアクセスが許可されます。Geolocationの設定を行うことによって、特定の国からの接続をブロックすることが可能です。
 
-CM画面左上部のworkspaceから、"Security"を選択します。”WAF” > “Policies”で、作成済みのWAFポリシーを選択し、"General Settings"の設定ページを開きます。
+CM画面左上部のworkspaceから、"Security"を選択します。
+
+”WAF” > “Policies”で、作成済みのWAFポリシーを選択し、"General Settings"の設定ページを開きます。
 Geolocationの設定を表示するために“Advanced View”のトグルをクリックし、有効にします。
 
    .. image:: images/Picture1.png
